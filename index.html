@@ -3,114 +3,219 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Nithin Krishnaah R S — Software Developer, AI/ML & Full-Stack Developer">
-<title>Nithin Krishnaah | Software Developer</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+<meta name="description" content="Nithin Krishnaah R S — Software Developer, AI/ML and Full-Stack Developer portfolio.">
+<meta name="theme-color" content="#07090f">
+<title>Nithin Krishnaah — Software Developer</title>
 
+<!-- Premium typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
 :root{
-  --bg:#05070d; --panel:#0b101a; --panel2:#0e1522; --text:#f4f7fb;
-  --muted:#94a3b8; --line:rgba(255,255,255,.09); --cyan:#48e8ff;
-  --violet:#8b5cf6; --green:#53f2a5; --glow:0 0 40px rgba(72,232,255,.12);
+  --bg:#07090f;
+  --surface:#0d111a;
+  --surface2:#111722;
+  --text:#f7f8fb;
+  --muted:#9ba7ba;
+  --line:rgba(255,255,255,.09);
+  --cyan:#5ee7f5;
+  --blue:#6c8cff;
+  --violet:#a78bfa;
+  --green:#67e8a5;
+  --max:1180px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;
-background-image:linear-gradient(rgba(72,232,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(72,232,255,.035) 1px,transparent 1px);
-background-size:55px 55px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-nav{position:fixed;z-index:50;top:0;left:0;width:100%;backdrop-filter:blur(18px);background:rgba(5,7,13,.68);border-bottom:1px solid var(--line)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:"Space Grotesk";font-weight:700;font-size:24px;letter-spacing:-1px}
-.logo b{color:var(--cyan)}
-.links{display:flex;gap:26px;font-size:13px;color:#b9c4d4}
-.links a:hover{color:var(--cyan)}
-.hero{min-height:100vh;display:grid;place-items:center;padding:130px 0 80px;position:relative}
-.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.22;pointer-events:none}
-.o1{width:330px;height:330px;background:var(--violet);top:18%;left:5%}
-.o2{width:300px;height:300px;background:var(--cyan);right:4%;bottom:12%}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.025);color:#b9c6d8;font-size:12px;margin-bottom:22px}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green)}
-h1{font-family:"Space Grotesk";font-size:clamp(48px,7vw,82px);line-height:.95;letter-spacing:-4px;margin-bottom:22px}
-.gradient{background:linear-gradient(100deg,#fff 15%,var(--cyan),#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero h2{font-size:20px;color:#c8d1df;font-weight:500;margin-bottom:18px}
-.hero p{color:var(--muted);font-size:16px;line-height:1.8;max-width:650px}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{padding:13px 18px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:700;transition:.25s}
-.btn:hover{transform:translateY(-3px);border-color:rgba(72,232,255,.5)}
-.primary{background:linear-gradient(100deg,var(--violet),#5d8cff);border:0}
-.secondary{background:rgba(255,255,255,.035)}
-.hero-card{position:relative;padding:1px;border-radius:22px;background:linear-gradient(145deg,rgba(72,232,255,.55),rgba(139,92,246,.18),transparent)}
-.code-card{background:rgba(8,12,20,.92);border-radius:21px;padding:25px;box-shadow:var(--glow)}
-.window{display:flex;gap:7px;margin-bottom:24px}.window i{width:9px;height:9px;border-radius:50%;background:#334155}
-.code{font:13px/2.05 "SFMono-Regular",Consolas,monospace;color:#aab7c9}
-.c1{color:#8b5cf6}.c2{color:#48e8ff}.c3{color:#53f2a5}.c4{color:#f8c66d}
-section{padding:110px 0}
-.section-head{margin-bottom:45px}.kicker{color:var(--cyan);font-size:11px;text-transform:uppercase;letter-spacing:3px;font-weight:800}
-.section-head h2{font:700 clamp(32px,5vw,48px) "Space Grotesk";letter-spacing:-2px;margin:8px 0 10px}
-.section-head p{color:var(--muted);max-width:650px;line-height:1.7}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.panel{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 15px 50px rgba(0,0,0,.18)}
-.panel p{color:var(--muted);line-height:1.8}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
-.stat{padding:18px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.02)}
-.stat strong{display:block;font:700 25px "Space Grotesk";color:var(--cyan)} .stat span{font-size:12px;color:var(--muted)}
-.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 13px;border:1px solid var(--line);border-radius:9px;background:var(--panel);font-size:13px;color:#cbd5e1;transition:.2s}.skill:hover{border-color:var(--cyan);color:#fff;transform:translateY(-2px)}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.project{display:flex;flex-direction:column;min-height:310px;background:linear-gradient(160deg,#0d1420,#080c14);border:1px solid var(--line);border-radius:18px;padding:25px;transition:.3s;position:relative;overflow:hidden}
-.project:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-80px;top:-80px;background:var(--cyan);filter:blur(70px);opacity:.12}
-.project:hover{transform:translateY(-7px);border-color:rgba(72,232,255,.35);box-shadow:var(--glow)}
-.num{color:var(--cyan);font:700 11px "Space Grotesk";letter-spacing:2px}.project h3{font:700 22px "Space Grotesk";margin:16px 0 10px}.project p{color:var(--muted);font-size:13px;line-height:1.7}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}.tag{font-size:10px;padding:6px 8px;border-radius:6px;background:#141d2c;color:#aebbd0}.project-link{margin-top:auto;padding-top:20px;color:var(--cyan);font-size:12px;font-weight:700}
-.experience{border-left:1px solid #253044;padding-left:25px}.exp{position:relative;padding-bottom:35px}.exp:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);left:-30px;top:5px;box-shadow:0 0 15px var(--cyan)}.exp h3{font:700 21px "Space Grotesk"}.exp small{color:var(--cyan);display:block;margin:5px 0 10px}.exp p{color:var(--muted);line-height:1.75;font-size:13px}
-.contact{padding:50px;text-align:center;background:linear-gradient(145deg,rgba(72,232,255,.08),rgba(139,92,246,.08));border:1px solid var(--line);border-radius:22px}.contact h2{font:700 42px "Space Grotesk";letter-spacing:-2px}.contact p{color:var(--muted);margin:12px auto 25px}.contact-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.contact-links a{padding:11px 15px;border:1px solid var(--line);border-radius:9px;font-size:12px;background:rgba(255,255,255,.03)}
-footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:#657187;font-size:12px}
-.reveal{opacity:0;transform:translateY(20px);transition:.7s}.reveal.show{opacity:1;transform:none}
-@media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.hero-card{max-width:600px}.links{display:none}h1{letter-spacing:-2.5px}.hero{padding-top:110px}}
-@media(max-width:520px){section{padding:75px 0}.contact{padding:35px 20px}.contact h2{font-size:32px}.stats{grid-template-columns:1fr 1fr}}
+body{
+  font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);
+  line-height:1.6;overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;
+  background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:linear-gradient(to bottom,black,transparent 85%);
+}
+::selection{background:rgba(94,231,245,.25)}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+nav{
+  position:fixed;z-index:100;top:0;left:0;width:100%;
+  background:rgba(7,9,15,.72);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line)
+}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:"Manrope";font-size:24px;font-weight:800;letter-spacing:-1.5px}
+.brand span{color:var(--cyan)}
+.navlinks{display:flex;gap:28px;color:#b7c0d0;font-size:13px}
+.navlinks a{transition:.2s}.navlinks a:hover{color:#fff}
+.nav-cta{
+  padding:10px 15px;border:1px solid var(--line);border-radius:9px;
+  font-size:12px;font-weight:700;background:rgba(255,255,255,.03)
+}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:130px 0 90px}
+.hero:after{
+  content:"";position:absolute;width:600px;height:600px;border-radius:50%;
+  background:rgba(94,231,245,.08);filter:blur(120px);right:-180px;top:5%;pointer-events:none
+}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:75px;align-items:center}
+.availability{
+  display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--line);
+  border-radius:999px;color:#b9c4d4;background:rgba(255,255,255,.025);font-size:11px;
+  margin-bottom:24px
+}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}
+h1{
+  font-family:"Manrope";font-size:clamp(48px,7.5vw,88px);line-height:.95;
+  letter-spacing:-5px;font-weight:800;margin-bottom:23px
+}
+.gradient{
+  background:linear-gradient(100deg,#fff 10%,var(--cyan) 50%,var(--violet));
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.hero h2{font-family:"Manrope";font-size:20px;font-weight:600;color:#d0d7e4;margin-bottom:18px}
+.hero-copy{font-size:16px;max-width:690px;color:var(--muted);line-height:1.85}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:31px}
+.btn{
+  padding:12px 17px;border-radius:9px;border:1px solid var(--line);
+  font-size:12px;font-weight:700;transition:.25s;background:rgba(255,255,255,.025)
+}
+.btn:hover{transform:translateY(-3px);border-color:rgba(94,231,245,.4)}
+.btn-primary{border:0;background:linear-gradient(100deg,#6477ff,#7b61ff);color:#fff}
+.hero-side{position:relative}
+.profile-card{
+  position:relative;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
+  border-radius:22px;padding:28px;box-shadow:0 30px 100px rgba(0,0,0,.3)
+}
+.profile-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+.monogram{
+  width:58px;height:58px;border-radius:16px;display:grid;place-items:center;
+  font:800 22px "Manrope";background:linear-gradient(135deg,#1b2435,#121725);border:1px solid var(--line)
+}
+.status{font:11px "Space Mono";color:var(--green)}
+.profile-card h3{font:700 23px "Manrope";margin-bottom:6px}
+.profile-card>p{font-size:13px;color:var(--muted);margin-bottom:22px}
+.card-line{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--line);font-size:12px}
+.card-line span:first-child{color:#748096}.card-line span:last-child{font-weight:600;color:#d8deea}
+.code{
+  margin-top:22px;padding:18px;border:1px solid var(--line);border-radius:13px;
+  background:#090d15;font:11px/1.9 "Space Mono";color:#9eabc0
+}
+.code b{color:var(--cyan)}.code em{color:var(--green);font-style:normal}
+section{padding:115px 0}
+.section-label{font:700 10px "Space Mono";color:var(--cyan);letter-spacing:2.5px;text-transform:uppercase}
+.section-title{font:800 clamp(32px,4.5vw,50px) "Manrope";letter-spacing:-2.5px;margin-top:8px}
+.section-sub{color:var(--muted);max-width:680px;font-size:14px;margin-top:11px;line-height:1.8}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:45px}
+.panel{
+  padding:30px;border:1px solid var(--line);border-radius:18px;
+  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012))
+}
+.panel p{color:var(--muted);font-size:14px;line-height:1.85}
+.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quick{
+  padding:19px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.018)
+}
+.quick strong{display:block;font:800 24px "Manrope";color:#fff}.quick span{font-size:11px;color:#758197}
+.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:35px}
+.skill{
+  padding:10px 13px;border:1px solid var(--line);border-radius:8px;
+  background:#0c111a;color:#cdd5e2;font-size:12px;transition:.22s
+}
+.skill:hover{transform:translateY(-2px);border-color:rgba(94,231,245,.4);color:#fff}
+.category{margin:35px 0 13px;color:#7d8ba1;font:700 10px "Space Mono";letter-spacing:2px;text-transform:uppercase}
+.projects{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:45px
+}
+.project{
+  min-height:335px;display:flex;flex-direction:column;padding:27px;
+  border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#0d131e,#090d15);
+  position:relative;overflow:hidden;transition:.3s
+}
+.project:hover{transform:translateY(-6px);border-color:rgba(94,231,245,.35);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.project:before{
+  content:"";position:absolute;width:180px;height:180px;right:-100px;top:-100px;border-radius:50%;
+  background:var(--cyan);filter:blur(80px);opacity:.08
+}
+.project-index{font:700 10px "Space Mono";color:var(--cyan);letter-spacing:2px}
+.project h3{font:800 25px "Manrope";letter-spacing:-1px;margin:15px 0 10px}
+.project p{color:var(--muted);font-size:13px;line-height:1.75}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:19px}.tag{font-size:10px;padding:6px 8px;border-radius:5px;background:#151e2c;color:#abb7c9}
+.project-bottom{margin-top:auto;padding-top:23px;display:flex;justify-content:space-between;align-items:center}
+.project-link{font-size:11px;color:var(--cyan);font-weight:700}.project-type{font:9px "Space Mono";color:#647188}
+.experience{margin-top:45px;border-left:1px solid #283245;padding-left:27px}
+.exp{position:relative;padding-bottom:35px}.exp:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);left:-32px;top:5px;box-shadow:0 0 15px rgba(94,231,245,.6)}
+.exp h3{font:700 22px "Manrope"}.exp .meta{font:11px "Space Mono";color:var(--cyan);margin:7px 0 11px}.exp p{color:var(--muted);font-size:13px;line-height:1.8}
+.education-card{margin-top:40px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.education-card h3{font:700 22px "Manrope"}.education-card p{color:var(--muted);font-size:13px}.year{font:700 12px "Space Mono";color:var(--cyan)}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}
+.cert{
+  padding:21px;border:1px solid var(--line);border-radius:14px;background:#0c111a
+}
+.cert .icon{font-size:20px;margin-bottom:14px}.cert h3{font:700 16px "Manrope";margin-bottom:6px}.cert p{font-size:11px;color:var(--muted);line-height:1.6}
+.contact{
+  margin-top:40px;padding:55px;text-align:center;border-radius:22px;border:1px solid var(--line);
+  background:radial-gradient(circle at 50% 0,rgba(94,231,245,.10),transparent 55%),#0b1019
+}
+.contact h2{font:800 clamp(34px,5vw,52px) "Manrope";letter-spacing:-2.5px}.contact p{color:var(--muted);font-size:14px;margin:10px auto 25px}
+.contact-links{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}.contact-links a{padding:11px 14px;border:1px solid var(--line);border-radius:8px;font-size:11px;background:rgba(255,255,255,.025)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#657187;font-size:11px;text-align:center}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){
+  .hero-grid,.about-grid{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.cert-grid{grid-template-columns:1fr 1fr}
+  .navlinks{display:none}.hero{padding-top:115px}h1{letter-spacing:-3px}
+}
+@media(max-width:560px){
+  section{padding:80px 0}.cert-grid{grid-template-columns:1fr}.education-card{align-items:flex-start;flex-direction:column}
+  .contact{padding:38px 20px}.quick-grid{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
-<body>
 
+<body>
 <nav>
   <div class="container nav">
-    <a class="logo" href="#">NK<b>.</b></a>
-    <div class="links">
+    <a href="#" class="brand">Nithin<span>.</span></a>
+    <div class="navlinks">
       <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
-      <a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <a href="#experience">Experience</a><a href="#certifications">Certificates</a><a href="#contact">Contact</a>
     </div>
+    <a class="nav-cta" href="mailto:nithinseenu24@gmail.com">Hire / Connect</a>
   </div>
 </nav>
 
 <header class="hero">
-  <div class="orb o1"></div><div class="orb o2"></div>
   <div class="container hero-grid">
     <div class="reveal">
-      <div class="eyebrow"><span class="dot"></span> Open to Software Developer opportunities</div>
+      <div class="availability"><span class="live-dot"></span> Open to Software Developer opportunities</div>
       <h1>Nithin<br><span class="gradient">Krishnaah.</span></h1>
       <h2>Software Developer · AI/ML · Full-Stack</h2>
-      <p>I build practical digital products with Java, Spring Boot, React, Python and AI/ML — turning real-world problems into clean, usable software.</p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">Explore Projects ↗</a>
-        <a class="btn secondary" href="mailto:nithinseenu24@gmail.com">Let's Connect</a>
-        <a class="btn secondary" href="https://github.com/NithinKrishnaah46" target="_blank">GitHub ↗</a>
+      <p class="hero-copy">I design and build practical software experiences across web development, backend engineering and AI/ML. My focus is simple: understand the problem, build the right solution, and make it useful.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#projects">View selected work ↗</a>
+        <a class="btn" href="mailto:nithinseenu24@gmail.com">Let's work together</a>
+        <a class="btn" href="https://github.com/NithinKrishnaah46" target="_blank">GitHub ↗</a>
       </div>
     </div>
-    <div class="hero-card reveal">
-      <div class="code-card">
-        <div class="window"><i></i><i></i><i></i></div>
+
+    <div class="hero-side reveal">
+      <div class="profile-card">
+        <div class="profile-top"><div class="monogram">NK</div><div class="status">● AVAILABLE</div></div>
+        <h3>Software Developer</h3>
+        <p>Building with code, data and intelligent systems.</p>
+        <div class="card-line"><span>Education</span><span>B.E. CSE · 2026</span></div>
+        <div class="card-line"><span>Institute</span><span>Sathyabama IST</span></div>
+        <div class="card-line"><span>Core</span><span>Java · React · Python</span></div>
+        <div class="card-line"><span>Focus</span><span>AI/ML · Full-Stack</span></div>
         <div class="code">
-          <span class="c1">const</span> developer = {<br>
-          &nbsp;&nbsp;name: <span class="c3">"Nithin Krishnaah"</span>,<br>
-          &nbsp;&nbsp;degree: <span class="c3">"B.E. CSE"</span>,<br>
-          &nbsp;&nbsp;graduation: <span class="c4">2026</span>,<br>
-          &nbsp;&nbsp;focus: [<span class="c3">"Software"</span>, <span class="c3">"AI/ML"</span>],<br>
-          &nbsp;&nbsp;stack: [<span class="c3">"Java"</span>, <span class="c3">"React"</span>,<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;<span class="c3">"Spring Boot"</span>, <span class="c3">"Python"</span>]<br>
-          };<br><br>
-          <span class="c2">// build. learn. ship.</span>
+          <b>const</b> mindset = {<br>
+          &nbsp;problem: <em>"understand"</em>,<br>
+          &nbsp;solution: <em>"build"</em>,<br>
+          &nbsp;quality: <em>"ship"</em><br>
+          };
         </div>
       </div>
     </div>
@@ -118,135 +223,192 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:#
 </header>
 
 <section id="about">
-  <div class="container">
-    <div class="section-head reveal"><div class="kicker">01 / About</div><h2>Curious by default.</h2><p>Engineering mindset, product curiosity and a focus on solving useful problems.</p></div>
-    <div class="about">
-      <div class="panel reveal">
-        <p>I'm a B.E. Computer Science and Engineering student at Sathyabama Institute of Science and Technology, graduating in 2026. My interests span software development, AI/ML, full-stack applications and practical automation.</p>
-        <br>
-        <p>I've worked on AI and web projects and gained software-development experience through a billing application, including user profile and product-details functionality and exposure to SAP-related billing workflows.</p>
-      </div>
-      <div class="panel reveal">
-        <div class="stats">
-          <div class="stat"><strong>2026</strong><span>Graduation</span></div>
-          <div class="stat"><strong>AI/ML</strong><span>Focus Area</span></div>
-          <div class="stat"><strong>Java</strong><span>Backend</span></div>
-          <div class="stat"><strong>React</strong><span>Frontend</span></div>
-        </div>
+<div class="container">
+  <div class="section-label">01 / Profile</div>
+  <h2 class="section-title">Engineering with purpose.</h2>
+  <p class="section-sub">A modern software profile combining application development, AI/ML experimentation and practical project work.</p>
+  <div class="about-grid">
+    <div class="panel reveal">
+      <p>I'm a B.E. Computer Science and Engineering student at Sathyabama Institute of Science and Technology, graduating in 2026. I enjoy building applications that solve concrete problems and learning new technologies by turning ideas into working products.</p><br>
+      <p>My development experience includes frontend work on a billing application, user profile and product-details functionality, and exposure to SAP-related billing workflows. My independent projects explore traffic analysis, parking, AI/ML, computer vision and web applications.</p>
+    </div>
+    <div class="panel reveal">
+      <div class="quick-grid">
+        <div class="quick"><strong>2026</strong><span>Graduation</span></div>
+        <div class="quick"><strong>AI/ML</strong><span>Special interest</span></div>
+        <div class="quick"><strong>Java</strong><span>Backend</span></div>
+        <div class="quick"><strong>React</strong><span>Frontend</span></div>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <section id="skills">
-  <div class="container">
-    <div class="section-head reveal"><div class="kicker">02 / Skills</div><h2>My toolkit.</h2><p>Technologies I use to design, build and ship applications.</p></div>
-    <div class="skills reveal">
-      <span class="skill">Java</span><span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">React</span>
-      <span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">Spring Boot</span><span class="skill">REST APIs</span>
-      <span class="skill">MySQL</span><span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">AI / ML</span>
-      <span class="skill">Machine Learning</span><span class="skill">Computer Vision</span><span class="skill">SAP</span>
-    </div>
+<div class="container">
+  <div class="section-label">02 / Toolkit</div>
+  <h2 class="section-title">Tools I build with.</h2>
+  <p class="section-sub">A practical toolkit across software engineering, AI/ML, databases and developer tooling.</p>
+
+  <div class="category">Languages</div>
+  <div class="skills reveal">
+    <span class="skill">Java</span><span class="skill">Python</span><span class="skill">JavaScript</span>
+    <span class="skill">TypeScript</span><span class="skill">HTML5</span><span class="skill">CSS3</span>
   </div>
+
+  <div class="category">Frontend & Backend</div>
+  <div class="skills reveal">
+    <span class="skill">React</span><span class="skill">Spring Boot</span><span class="skill">REST APIs</span>
+    <span class="skill">Responsive UI</span><span class="skill">Web Development</span>
+  </div>
+
+  <div class="category">AI / ML & Data</div>
+  <div class="skills reveal">
+    <span class="skill">Machine Learning</span><span class="skill">AI / ML</span><span class="skill">Computer Vision</span>
+    <span class="skill">Python</span><span class="skill">Data Analysis</span>
+  </div>
+
+  <div class="category">Database & Tools</div>
+  <div class="skills reveal">
+    <span class="skill">MySQL</span><span class="skill">Git</span><span class="skill">GitHub</span>
+    <span class="skill">SAP</span><span class="skill">Jupyter</span><span class="skill">Postman</span>
+  </div>
+</div>
 </section>
 
 <section id="projects">
-  <div class="container">
-    <div class="section-head reveal"><div class="kicker">03 / Selected Work</div><h2>Things I've built.</h2><p>Projects that show how I approach real-world problems.</p></div>
-    <div class="projects">
-      <article class="project reveal">
-        <div class="num">01 — AI / ML</div>
-        <h3>AI Traffic Availability Analyzer</h3>
-        <p>An AI-driven traffic analysis concept focused on understanding road traffic availability and helping users make better travel decisions.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">AI/ML</span><span class="tag">Computer Vision</span><span class="tag">React</span></div>
-        <a class="project-link" href="https://github.com/NithinKrishnaah46" target="_blank">View on GitHub ↗</a>
-      </article>
-      <article class="project reveal">
-        <div class="num">02 — WEB APP</div>
-        <h3>ParkShare</h3>
-        <p>A parking-sharing platform concept connecting parking-space owners with people searching for convenient available parking.</p>
-        <div class="tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">MySQL</span></div>
-        <a class="project-link" href="https://github.com/NithinKrishnaah46" target="_blank">View on GitHub ↗</a>
-      </article>
-      <article class="project reveal">
-        <div class="num">03 — SOFTWARE</div>
-        <h3>Billing Application</h3>
-        <p>Contributed to frontend functionality for user profiles and product details, with exposure to SAP-related billing workflows during software-development experience.</p>
-        <div class="tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">SAP</span><span class="tag">Billing</span></div>
-        <a class="project-link" href="https://github.com/NithinKrishnaah46" target="_blank">GitHub Profile ↗</a>
-      </article>
-      <article class="project reveal">
-        <div class="num">04 — MACHINE LEARNING</div>
-        <h3>Personal Loan Approval Prediction</h3>
-        <p>Machine-learning project focused on predicting personal loan approval using applicant data and supervised learning techniques.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Jupyter</span></div>
-        <a class="project-link" href="https://github.com/NithinKrishnaah46/Predicting-personal-loan-approval-using-machine-learning" target="_blank">View Repository ↗</a>
-      </article>
-      <article class="project reveal">
-        <div class="num">05 — COMPUTER VISION</div>
-        <h3>Hand Gesture Recognition</h3>
-        <p>A computer-vision project exploring hand gesture detection and recognition using Python-based machine-learning techniques.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">ML</span></div>
-        <a class="project-link" href="https://github.com/NithinKrishnaah46/Hand-Gesture" target="_blank">View Repository ↗</a>
-      </article>
-      <article class="project reveal">
-        <div class="num">06 — WEB / DATA</div>
-        <h3>Geo-Billing</h3>
-        <p>A TypeScript project from my GitHub portfolio, demonstrating web-development and application-building experience.</p>
-        <div class="tags"><span class="tag">TypeScript</span><span class="tag">Web</span><span class="tag">Application</span></div>
-        <a class="project-link" href="https://github.com/NithinKrishnaah46/Geo-Billing" target="_blank">View Repository ↗</a>
-      </article>
-    </div>
+<div class="container">
+  <div class="section-label">03 / Selected Work</div>
+  <h2 class="section-title">Projects that tell the story.</h2>
+  <p class="section-sub">A mix of AI/ML, full-stack and practical software projects. Each one is presented around the problem and technology used.</p>
+
+  <div class="projects">
+    <article class="project reveal">
+      <div class="project-index">01 — AI / COMPUTER VISION</div>
+      <h3>AI Traffic Availability Analyzer</h3>
+      <p>AI-based traffic analysis focused on understanding traffic availability on roads and turning visual/traffic information into useful insights.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">AI/ML</span><span class="tag">Computer Vision</span><span class="tag">React</span></div>
+      <div class="project-bottom"><a class="project-link" href="https://github.com/NithinKrishnaah46" target="_blank">View GitHub ↗</a><span class="project-type">FEATURED</span></div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-index">02 — FULL-STACK</div>
+      <h3>ParkShare</h3>
+      <p>A parking-sharing platform concept connecting parking-space owners with users looking for convenient available parking.</p>
+      <div class="tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">MySQL</span></div>
+      <div class="project-bottom"><a class="project-link" href="https://github.com/NithinKrishnaah46" target="_blank">View GitHub ↗</a><span class="project-type">PRODUCT</span></div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-index">03 — SOFTWARE / SAP</div>
+      <h3>Billing Application</h3>
+      <p>Worked on frontend functionality including user profiles and product details, with exposure to SAP-related billing workflows.</p>
+      <div class="tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">SAP</span><span class="tag">Billing</span></div>
+      <div class="project-bottom"><a class="project-link" href="https://github.com/NithinKrishnaah46" target="_blank">GitHub Profile ↗</a><span class="project-type">EXPERIENCE</span></div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-index">04 — AI / ML</div>
+      <h3>FreshMorph</h3>
+      <p>An AI-focused project included in my portfolio, demonstrating experimentation with modern intelligent software and image-oriented workflows.</p>
+      <div class="tags"><span class="tag">AI</span><span class="tag">Python</span><span class="tag">ML</span><span class="tag">Image Processing</span></div>
+      <div class="project-bottom"><a class="project-link" href="https://github.com/NithinKrishnaah46" target="_blank">View GitHub ↗</a><span class="project-type">AI PROJECT</span></div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-index">05 — MACHINE LEARNING</div>
+      <h3>Personal Loan Approval Prediction</h3>
+      <p>Machine-learning project exploring prediction of personal-loan approval using applicant information and supervised learning techniques.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Jupyter</span></div>
+      <div class="project-bottom"><a class="project-link" href="https://github.com/NithinKrishnaah46/Predicting-personal-loan-approval-using-machine-learning" target="_blank">View Repository ↗</a><span class="project-type">ML</span></div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-index">06 — COMPUTER VISION</div>
+      <h3>Hand Gesture Recognition</h3>
+      <p>Computer-vision project exploring hand gesture detection and recognition using Python-based machine-learning techniques.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">ML</span></div>
+      <div class="project-bottom"><a class="project-link" href="https://github.com/NithinKrishnaah46/Hand-Gesture" target="_blank">View Repository ↗</a><span class="project-type">VISION</span></div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-index">07 — WEB / APPLICATION</div>
+      <h3>Geo-Billing</h3>
+      <p>A TypeScript-based application project demonstrating web development and application-building experience.</p>
+      <div class="tags"><span class="tag">TypeScript</span><span class="tag">Web</span><span class="tag">Application</span></div>
+      <div class="project-bottom"><a class="project-link" href="https://github.com/NithinKrishnaah46/Geo-Billing" target="_blank">View Repository ↗</a><span class="project-type">WEB</span></div>
+    </article>
   </div>
+</div>
 </section>
 
 <section id="experience">
-  <div class="container">
-    <div class="section-head reveal"><div class="kicker">04 / Experience</div><h2>Where I've learned.</h2></div>
-    <div class="experience reveal">
-      <div class="exp">
-        <h3>Software Development Intern</h3>
-        <small>Billing Application · SAP Exposure</small>
-        <p>Worked on a billing application and contributed to frontend functionality including user profiles and product details. Gained exposure to SAP-related billing workflows and practical software-development processes.</p>
-      </div>
+<div class="container">
+  <div class="section-label">04 / Experience</div>
+  <h2 class="section-title">Where I learned to ship.</h2>
+  <div class="experience reveal">
+    <div class="exp">
+      <h3>Software Development Intern</h3>
+      <div class="meta">BILLING APPLICATION · SAP EXPOSURE</div>
+      <p>Contributed to frontend development for a billing application, including user profile and product-details functionality. Gained exposure to SAP-related billing workflows and practical software-development processes.</p>
     </div>
   </div>
+</div>
 </section>
 
 <section>
-  <div class="container">
-    <div class="section-head reveal"><div class="kicker">05 / Education</div><h2>Academic foundation.</h2></div>
-    <div class="panel reveal">
-      <h3 style="font:700 24px 'Space Grotesk';margin-bottom:7px">B.E. Computer Science and Engineering</h3>
-      <p>Sathyabama Institute of Science and Technology · Chennai, Tamil Nadu · 2026</p>
-    </div>
+<div class="container">
+  <div class="section-label">05 / Education</div>
+  <h2 class="section-title">Academic foundation.</h2>
+  <div class="panel education-card reveal">
+    <div><h3>B.E. Computer Science and Engineering</h3><p>Sathyabama Institute of Science and Technology · Chennai, Tamil Nadu</p></div>
+    <div class="year">2026</div>
   </div>
+</div>
+</section>
+
+<section id="certifications">
+<div class="container">
+  <div class="section-label">06 / Certifications</div>
+  <h2 class="section-title">Credentials & learning.</h2>
+  <p class="section-sub">A dedicated space for your verified certifications. Add the certificate PDF/link to each card when uploading the portfolio.</p>
+
+  <!-- Replace the certificate names below with the exact certificates from your resume/list.
+       The cards are intentionally easy to edit and will keep the premium layout. -->
+  <div class="cert-grid">
+    <div class="cert reveal"><div class="icon">✦</div><h3>AI / Machine Learning Certification</h3><p>Certificate credential · Add issuer / verification link</p></div>
+    <div class="cert reveal"><div class="icon">◈</div><h3>Java / Software Development</h3><p>Certificate credential · Add issuer / verification link</p></div>
+    <div class="cert reveal"><div class="icon">⌁</div><h3>Web Development / React</h3><p>Certificate credential · Add issuer / verification link</p></div>
+    <div class="cert reveal"><div class="icon">◆</div><h3>Python / Data Science</h3><p>Certificate credential · Add issuer / verification link</p></div>
+    <div class="cert reveal"><div class="icon">◎</div><h3>Additional Certification</h3><p>Certificate credential · Add issuer / verification link</p></div>
+    <div class="cert reveal"><div class="icon">＋</div><h3>Additional Achievement</h3><p>Certificate credential · Add issuer / verification link</p></div>
+  </div>
+</div>
 </section>
 
 <section id="contact">
-  <div class="container">
-    <div class="contact reveal">
-      <div class="kicker">06 / Contact</div>
-      <h2>Let's build something.</h2>
-      <p>Open to Software Developer, Full-Stack, Java and AI/ML opportunities.</p>
-      <div class="contact-links">
-        <a href="mailto:nithinseenu24@gmail.com">✉ Email</a>
-        <a href="https://github.com/NithinKrishnaah46" target="_blank">◈ GitHub</a>
-        <a href="https://www.linkedin.com/" target="_blank">in LinkedIn</a>
-      </div>
+<div class="container">
+  <div class="contact reveal">
+    <div class="section-label">07 / Contact</div>
+    <h2>Let's build something valuable.</h2>
+    <p>Open to Software Developer, Full-Stack, Java and AI/ML opportunities — and freelance development work.</p>
+    <div class="contact-links">
+      <a href="mailto:nithinseenu24@gmail.com">✉ nithinseenu24@gmail.com</a>
+      <a href="https://github.com/NithinKrishnaah46" target="_blank">◈ GitHub</a>
+      <!-- Replace with your real LinkedIn URL -->
+      <a href="https://www.linkedin.com/" target="_blank">in LinkedIn</a>
     </div>
   </div>
+</div>
 </section>
 
-<footer>© 2026 Nithin Krishnaah R S · Built with HTML, CSS & JavaScript</footer>
+<footer>© 2026 Nithin Krishnaah R S · Software Developer · Built for GitHub Pages</footer>
 
 <script>
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting) entry.target.classList.add('show');
-  });
-},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")});
+},{threshold:.1});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 </script>
 </body>
 </html>
